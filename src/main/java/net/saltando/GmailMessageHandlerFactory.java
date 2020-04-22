@@ -13,7 +13,6 @@ import org.subethamail.smtp.MessageContext;
 import org.subethamail.smtp.MessageHandler;
 import org.subethamail.smtp.MessageHandlerFactory;
 import org.subethamail.smtp.RejectException;
-import org.subethamail.smtp.TooMuchDataException;
 
 public class GmailMessageHandlerFactory implements MessageHandlerFactory {
 
@@ -57,7 +56,7 @@ public class GmailMessageHandlerFactory implements MessageHandlerFactory {
     }
 
     @Override
-    public String data(InputStream inputStream) throws RejectException, TooMuchDataException, IOException {
+    public String data(InputStream inputStream) throws RejectException, IOException {
       try {
         message = new MimeMessage(null, new ByteArrayInputStream(inputStreamToByteArray(inputStream)));
       } catch (MessagingException e) {
