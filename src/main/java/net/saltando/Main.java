@@ -11,7 +11,7 @@ import org.subethamail.smtp.server.SMTPServer;
 @Slf4j
 public class Main {
 
-  public static void main(String[] args) throws GeneralSecurityException, IOException {
+  public static void main(String[] args) {
     CliParams params = new CliParams();
     CmdLineParser parser = new CmdLineParser(params, ParserProperties.defaults().withUsageWidth(120));
 
