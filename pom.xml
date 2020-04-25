@@ -17,6 +17,7 @@
   </properties>
 
   <dependencies>
+    <!-- Gmail API -->
     <dependency>
       <groupId>com.google.api-client</groupId>
       <artifactId>google-api-client</artifactId>
@@ -32,6 +33,8 @@
       <artifactId>google-api-services-gmail</artifactId>
       <version>v1-rev110-1.25.0</version>
     </dependency>
+
+    <!-- Java Mail API -->
     <dependency>
       <groupId>com.sun.mail</groupId>
       <artifactId>javax.mail</artifactId>
@@ -43,12 +46,14 @@
       <version>1.6.2</version>
     </dependency>
 
+    <!-- SMTP Server -->
     <dependency>
       <groupId>com.github.davidmoten</groupId>
       <artifactId>subethasmtp</artifactId>
       <version>5.2.2</version>
     </dependency>
 
+    <!-- Logging -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
@@ -62,11 +67,18 @@
       <version>1.7.30</version>
     </dependency>
 
+    <!-- Helpers -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.12</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>args4j</groupId>
+      <artifactId>args4j</artifactId>
+      <version>2.33</version>
     </dependency>
   </dependencies>
 
@@ -83,26 +95,26 @@
       </plugin>
 
       <plugin>
-       <groupId>org.apache.maven.plugins</groupId>
-       <artifactId>maven-surefire-plugin</artifactId>
-       <version>2.22.2</version>
-     </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+      </plugin>
 
-     <plugin>
-       <groupId>org.apache.maven.plugins</groupId>
-       <artifactId>maven-failsafe-plugin</artifactId>
-       <version>2.22.2</version>
-       <executions>
-         <execution>
-           <goals>
-             <goal>integration-test</goal>
-             <goal>verify</goal>
-           </goals>
-         </execution>
-       </executions>
-     </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>2.22.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+              <goal>verify</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 
-     <!-- To add more information to MANIFEST.MF -->
+      <!-- To add more information to MANIFEST.MF -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>

@@ -14,6 +14,7 @@ import org.subethamail.smtp.MessageHandler;
 import org.subethamail.smtp.MessageHandlerFactory;
 import org.subethamail.smtp.RejectException;
 
+@Slf4j
 public class GmailMessageHandlerFactory implements MessageHandlerFactory {
 
   private final GmailAPI gmailAPI;
@@ -24,6 +25,7 @@ public class GmailMessageHandlerFactory implements MessageHandlerFactory {
 
   @Override
   public MessageHandler create(MessageContext messageContext) {
+    log.info("Message received from {}", messageContext.getRemoteAddress());
     return new Handler(gmailAPI);
   }
 
