@@ -23,7 +23,7 @@ public class Main {
         new Main().start(params);
       }
     } catch (Exception e) {
-      log.info("{}", e.getMessage());
+      log.info("{}", e.getMessage(), e);
       printUsage(parser);
     }
   }
