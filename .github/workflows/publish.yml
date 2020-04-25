@@ -4,7 +4,9 @@
 name: Publish to Docker Registry
 
 on:
-  tags: [ * ]
+  push:
+    tags:
+      - '*'
 
 jobs:
   build:
