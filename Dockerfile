@@ -11,4 +11,4 @@ RUN mvn -T4 package --batch-mode -Dmaven.test.skip=true -Dmaven.javadoc.skip=tru
 FROM adoptopenjdk:11-jre-hotspot
 
 COPY --from=jar-builder target/smtp-gmail-api.jar /smtp-gmail-api.jar
-ENTRYPOINT java -jar /smtp-gmail-api.jar
+ENTRYPOINT ["java", "-jar", "/smtp-gmail-api.jar"]
