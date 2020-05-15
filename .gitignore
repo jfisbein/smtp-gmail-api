@@ -15,3 +15,5 @@ config-naturbana.yml
 status.yml
 tokens
 src/main/resources/credentials.json
+.mvn/wrapper/maven-wrapper.jar
+
