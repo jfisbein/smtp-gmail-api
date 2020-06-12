@@ -16,7 +16,7 @@
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <google-api-client.version>1.30.9</google-api-client.version>
     <google-oauth-client-jetty.version>1.30.6</google-oauth-client-jetty.version>
-    <google-api-services-gmail.version>v1-rev20200504-1.30.9</google-api-services-gmail.version>
+    <google-api-services-gmail.version>v1-rev20200601-1.30.9</google-api-services-gmail.version>
     <javax.mail.version>1.6.2</javax.mail.version>
     <subethasmtp.version>5.2.4</subethasmtp.version>
     <slf4j.version>1.7.30</slf4j.version>
