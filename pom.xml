@@ -20,7 +20,7 @@
     <javax.mail.version>1.6.2</javax.mail.version>
     <subethasmtp.version>6.0.5</subethasmtp.version>
     <slf4j.version>2.0.7</slf4j.version>
-    <lombok.version>1.18.26</lombok.version>
+    <lombok.version>1.18.28</lombok.version>
     <args4j.version>2.33</args4j.version>
   </properties>
 
