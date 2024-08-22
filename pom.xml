@@ -19,7 +19,7 @@
     <google-api-services-gmail.version>v1-rev20231218-2.0.0</google-api-services-gmail.version>
     <javax.mail.version>1.6.2</javax.mail.version>
     <subethasmtp.version>7.1.1</subethasmtp.version>
-    <slf4j.version>2.0.12</slf4j.version>
+    <slf4j.version>2.0.16</slf4j.version>
     <lombok.version>1.18.32</lombok.version>
     <args4j.version>2.37</args4j.version>
   </properties>
